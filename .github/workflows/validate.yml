@@ -1,0 +1,33 @@
+name: validate-learning-tool
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile CLI
+        run: python -m py_compile ml_landscape.py
+      - name: Validate notebook structure
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          for path in Path(".").glob("*.ipynb"):
+              notebook = json.loads(path.read_text(encoding="utf-8"))
+              assert notebook.get("nbformat") == 4, f"{path}: expected notebook format 4"
+              assert isinstance(notebook.get("cells"), list), f"{path}: missing cells"
+              print(f"Validated {path}")
+          PY
