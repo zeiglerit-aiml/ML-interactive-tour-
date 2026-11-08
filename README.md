@@ -62,3 +62,9 @@ Discriminant Analysis is supervised because it uses labels.
 
 Genetic algorithms are displayed near the reinforcement-learning branch because one map groups them there;
 technically evolutionary computation is a separate optimization family.
+
+## Portfolio ownership
+
+Standalone educational ML taxonomy and algorithm exploration tool. Keep its CLI and notebook lesson content independent from production pipeline frameworks.
+
+Account-wide ownership and cleanup decisions are maintained in the [WSP portfolio repository catalog](https://github.com/zeiglerit-aiml/WSP_Integrated_AI_SDLC_GVC_pl/blob/main/REPOSITORY_CATALOG.md).
