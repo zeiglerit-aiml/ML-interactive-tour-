@@ -42,13 +42,13 @@ python ml_landscape.py --list
 python ml_landscape.py --build-all-notebook
 ```
 
-## Taxonomy covered
+## Reference algorithm checklist\n\nThe 20-algorithm reference image is represented in the catalog. The repository also retains additional algorithms beyond that reference. QDA and hierarchical clustering are included as distinct lessons; PCA is the principal component analysis entry.\n\n## Taxonomy covered
 
 Supervised learning; unsupervised learning; semi-supervised learning; self-supervised learning;
 reinforcement learning; artificial neural networks and deep learning; ensemble learning; statistical inference.
 
 Algorithms include Decision Trees, Logistic Regression, SVM, Naive Bayes, KNN, Linear/Polynomial/Ridge/Lasso,
-K-Means, DBSCAN, Mean Shift, Fuzzy C-Means, PCA, t-SNE, LDA, Apriori, FP-Growth, ECLAT,
+K-Means, Hierarchical Clustering, DBSCAN, Mean Shift, Fuzzy C-Means, PCA, t-SNE, LDA, QDA, Apriori, FP-Growth, ECLAT,
 Q-Learning, DQN, A3C, Genetic Algorithms, MLP, RBFNN, CNN, RNN, LSTM, GRU, Transformers,
 GANs, Autoencoders, Random Forest, Gradient Boosting, XGBoost, LightGBM, stacking,
 confidence intervals, t-tests, and a Bayesian update.
